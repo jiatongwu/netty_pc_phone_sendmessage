@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+option java_outer_classname = "ZhMessageProto";
+
+message ZhMessage {
+		required string whoami=1;
+	required string contenttype=2;
+	optional string contentstring=3;
+	optional bytes contentfile = 4;
+	optional string contentfilename = 5;
+	optional string whichphonelocation=6;
+	optional string sendtowhichpc=7;
+	optional string locationstring=8;
+}
